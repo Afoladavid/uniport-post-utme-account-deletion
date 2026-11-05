@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Uniport Post-UTME Offline 2026 – Delete Your Account</title>
+  <meta name="description" content="Request deletion of your Uniport Post-UTME Offline 2026 account and the data linked to it.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #ffffff;
+      --text: #1f2933;
+      --muted: #5b6770;
+      --accent: #1a5fb4;
+      --line: #d9dee3;
+      --box: #f3f6fa;
+      --err: #b42318;
+      --ok: #067647;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      line-height: 1.25;
+      margin: 0 0 1rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 2.2rem 0 .6rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid var(--line);
+    }
+
+    p,
+    li {
+      max-width: 65ch;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: .35rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .app {
+      background: var(--box);
+      border-left: 4px solid var(--accent);
+      padding: .8rem 1rem;
+      margin: 1rem 0 1.5rem;
+    }
+
+    .app p {
+      margin: .15rem 0;
+    }
+
+    form {
+      background: var(--box);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin: 1rem 0 .3rem;
+    }
+
+    label:first-of-type {
+      margin-top: 0;
+    }
+
+    .hint {
+      font-weight: 400;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 100%;
+      padding: .65rem .75rem;
+      font: inherit;
+      color: var(--text);
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    input:focus-visible,
+    textarea:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .check {
+      display: flex;
+      gap: .6rem;
+      align-items: flex-start;
+      font-weight: 400;
+      margin-top: 1.1rem;
+    }
+
+    .check input {
+      margin-top: .35rem;
+      width: 1.1rem;
+      height: 1.1rem;
+      flex: none;
+    }
+
+    button {
+      margin-top: 1.25rem;
+      padding: .75rem 1.4rem;
+      font: inherit;
+      font-weight: 600;
+      color: #fff;
+      background: var(--accent);
+      border: 0;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      opacity: .6;
+      cursor: wait;
+    }
+
+    .msg {
+      margin-top: 1rem;
+      padding: .8rem 1rem;
+      border-radius: 6px;
+      display: none;
+    }
+
+    .msg.ok {
+      display: block;
+      border: 1px solid var(--ok);
+      color: var(--ok);
+      font-weight: 600;
+    }
+
+    .msg.err {
+      display: block;
+      border: 1px solid var(--err);
+      color: var(--err);
+    }
+
+    .hp {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .updated {
+      color: var(--muted);
+      font-size: .9rem;
+      margin-top: 2.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Delete your account</h1>
+
+    <div class="app">
+      <p><strong>App name:</strong> Uniport Post-UTME Offline 2026 (com.femzee.uniport_post_utme)</p>
+      <p><strong>Developer:</strong> SurePass Limited</p>
+    </div>
+
+    <p>Use the form below to request deletion of your account and the data linked to it. Use the same email address you
+      registered with in the app.</p>
+
+    <!-- REPLACE YOUR_FORM_ID with your Formspree form ID, e.g. https://formspree.io/f/abcdwxyz -->
+    <form id="deleteForm" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+      <p class="hp"><label>Leave this empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+
+      <label for="email">Registered email address</label>
+      <input type="email" id="email" name="email" required autocomplete="email">
+
+      <label for="name">Name on your account</label>
+      <input type="text" id="name" name="name" required autocomplete="name">
+
+      <label for="username">Username <span class="hint">(optional)</span></label>
+      <input type="text" id="username" name="username">
+
+      <label for="reason">Reason for leaving <span class="hint">(optional)</span></label>
+      <textarea id="reason" name="reason" rows="3"></textarea>
+
+      <label class="check" for="confirm">
+        <input type="checkbox" id="confirm" name="confirm" value="yes" required>
+        <span>I want my account and all data linked to it permanently deleted.</span>
+      </label>
+
+      <button type="submit" id="submitBtn">Request account deletion</button>
+      <div id="result" class="msg" role="status" aria-live="polite"></div>
+    </form>
+
+    <p>Prefer email? Write to <a
+        href="mailto:surepass213@gmail.com?subject=Account%20Deletion%20Request">surepass213@gmail.com</a> with the
+      subject “Account Deletion Request”, from your registered address.</p>
+
+    <h2>What will be deleted</h2>
+    <p>When your request is processed, we permanently delete:</p>
+    <ul>
+      <li>Your account and profile information (name and email address)</li>
+      <li>Your test history, scores, and progress</li>
+      <li>Any preferences or settings saved to your account</li>
+    </ul>
+
+    <h2>What may be kept</h2>
+    <p>We do not retain any personal data after your account is deleted.</p>
+
+    <h2>How long it takes</h2>
+    <p>We process requests within 3 working days. We may ask you to confirm your identity first. You will receive a
+      confirmation email once your account has been deleted.</p>
+
+    <h2>Questions</h2>
+    <p>Contact us at <a href="mailto:surepass213@gmail.com">surepass213@gmail.com</a>.</p>
+
+    <p class="updated">Last updated: November 2, 2026</p>
+  </main>
+
+  <script>
+    var form = document.getElementById('deleteForm');
+    var btn = document.getElementById('submitBtn');
+    var result = document.getElementById('result');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      btn.disabled = true;
+      result.className = 'msg';
+
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      }).catch(function () { }).finally(function () {
+        form.reset(); // clears all inputs
+        result.className = 'msg ok';
+        result.textContent = 'Sent! Your request has been received. We will process it within 3 working days and email you a confirmation.';
+        btn.disabled = false;
+      });
+    });
+  </script>
+</body>
+
+</html>
